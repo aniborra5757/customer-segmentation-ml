@@ -122,10 +122,14 @@ Open in browser: [http://localhost:8501](http://localhost:8501)
 
 ---
 
-📷 Screenshots
+## 📷 Screenshots
 
-Cluster Plot
-(elbow\_plot.png and cluster\_plot.png will be rendered here on GitHub if pushed)
+### Cluster Plot  
+![Cluster Plot](cluster_plot.png)
+
+### Elbow Plot  
+![Elbow Plot](elbow_plot.png)
+
 
 ---
 
