@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')  # <--- ADD THIS LINE
 import matplotlib.pyplot as plt
-import seaborn as sns
+import seaborn as sns # type: ignore
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
