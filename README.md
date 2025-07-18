@@ -1,12 +1,12 @@
 ---
 
-🛍️ Customer Segmentation using K-Means Clustering
+## 🛍️ Customer Segmentation using K-Means Clustering
 
 This project segments mall customers into distinct groups based on **Annual Income** and **Spending Score**, using unsupervised machine learning (K-Means). It includes an interactive **Streamlit web app** for live predictions, visualizations, and downloads.
 
 ---
 
-📌 Project Goals
+# 📌 Project Goals
 
 * Perform customer segmentation using K-Means
 * Visualize cluster formation using Elbow and Scatter plots
@@ -15,7 +15,7 @@ This project segments mall customers into distinct groups based on **Annual Inco
 
 ---
 
-🧠 Tech Stack
+# 🧠 Tech Stack
 
 | Layer         | Tools Used                          |
 | ------------- | ----------------------------------- |
@@ -27,7 +27,7 @@ This project segments mall customers into distinct groups based on **Annual Inco
 
 ---
 
-📁 Project Structure
+# 📁 Project Structure
 
 ```
 customer-segmentation-ml/
@@ -49,27 +49,27 @@ customer-segmentation-ml/
 
 ---
 
-📊 Dataset
+## 📊 Dataset
 
 Source: [https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
 
-Columns Used:
+### Columns Used:
 
 * `Annual Income (k$)`
 * `Spending Score (1-100)`
 
 ---
 
-🚀 Setup & Run Locally
+# 🚀 Setup & Run Locally
 
-1. Clone the Repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/aniborra5757/customer-segmentation-ml.git
 cd customer-segmentation-ml
 ```
 
-2. Create & Activate Virtual Environment
+## 2. Create & Activate Virtual Environment
 
 ```bash
 python -m venv venv
@@ -77,7 +77,7 @@ venv\Scripts\activate        # On Windows
 source venv/bin/activate     # On macOS/Linux
 ```
 
-3. Install Dependencies
+## 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -85,13 +85,13 @@ pip install -r requirements.txt
 
 ---
 
-🏋️‍♂️ Train the Model (Optional)
+## 🏋️‍♂️ Train the Model (Optional)
 
 ```bash
 python src/customer_segmentation.py
 ```
 
-Outputs:
+### Outputs:
 
 * models/kmeans\_model.pkl
 * models/scaler.pkl
@@ -101,7 +101,7 @@ Outputs:
 
 ---
 
-🌐 Run the Streamlit App
+## 🌐 Run the Streamlit App
 
 ```bash
 streamlit run app.py
@@ -111,7 +111,7 @@ Open in browser: [http://localhost:8501](http://localhost:8501)
 
 ---
 
-⚙️ App Features
+## ⚙️ App Features
 
 * Upload a CSV with Annual Income and Spending Score
 * View raw and clustered data
@@ -133,7 +133,7 @@ Open in browser: [http://localhost:8501](http://localhost:8501)
 
 ---
 
-🔐 .gitignore
+## 🔐 .gitignore
 
 ```
 venv/
@@ -145,7 +145,7 @@ __pycache__/
 
 ---
 
-🚀 Deploy to Streamlit Cloud
+## 🚀 Deploy to Streamlit Cloud
 
 1. Go to [https://streamlit.io/cloud](https://streamlit.io/cloud)
 2. Click "New app"
@@ -154,7 +154,7 @@ __pycache__/
 
 ---
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 * Allow user to change number of clusters (K)
 * Add PCA-based visualization
@@ -164,6 +164,6 @@ __pycache__/
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Created by aniborra5757
+### Created by \[aniborra5757]
