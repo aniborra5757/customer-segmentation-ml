@@ -3,16 +3,12 @@
 
 This project segments mall customers into distinct groups based on **Annual Income** and **Spending Score**, using unsupervised machine learning (K-Means). It includes an interactive **Streamlit web app** for live predictions, visualizations, and downloads.
 
----
-
 ## 📌 Project Goals
 
 - Perform customer segmentation using K-Means
 - Visualize cluster formation using Elbow and Scatter plots
 - Evaluate cluster quality using Silhouette Score
 - Build an interactive web app to upload, cluster, and download customer data
-
----
 
 ## 🧠 Tech Stack
 
@@ -24,47 +20,34 @@ This project segments mall customers into distinct groups based on **Annual Inco
 | App Framework| Streamlit                       |
 | Deployment   | GitHub + (optional Streamlit Cloud) |
 
----
-
 ## 📁 Project Structure
 
 ```
 
 customer-segmentation-ml/
-├── app.py                        # Streamlit app
-├── cluster\_plot.png              # Saved cluster scatterplot
-├── elbow\_plot.png                # Saved elbow method plot
+├── app.py
+├── cluster\_plot.png
+├── elbow\_plot.png
 ├── data/
-│   └── Mall\_Customers.csv        # Input dataset (Kaggle)
+│   └── Mall\_Customers.csv
 ├── models/
-│   ├── kmeans\_model.pkl          # Trained KMeans model
-│   └── scaler.pkl                # Fitted StandardScaler
+│   ├── kmeans\_model.pkl
+│   └── scaler.pkl
 ├── notebooks/
-│   └── customer\_segmentation.ipynb # Optional EDA notebook
+│   └── customer\_segmentation.ipynb
 ├── src/
-│   └── customer\_segmentation.py  # Script to train model
-├── requirements.txt              # Python dependencies
-└── README.md                     # Project documentation
+│   └── customer\_segmentation.py
+├── requirements.txt
+└── README.md
 
 ````
 
----
-
 ## 📊 Dataset
 
-**Source:** [Kaggle - Mall Customers Dataset](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)  
-**Columns:**
-- `CustomerID`
-- `Gender`
-- `Age`
-- `Annual Income (k$)`
-- `Spending Score (1-100)`
-
-**Used for clustering:**
-- `Annual Income (k$)`
-- `Spending Score (1-100)`
-
----
+**Source:** https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python  
+**Columns Used:**
+- Annual Income (k$)
+- Spending Score (1-100)
 
 ## 🚀 Setup & Run Locally
 
@@ -79,76 +62,58 @@ cd customer-segmentation-ml
 
 ```bash
 python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
+venv\Scripts\activate     # On Windows
+source venv/bin/activate  # On macOS/Linux
 ```
 
-### 3️⃣ Install Required Packages
+### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## 🏋️‍♂️ Model Training (Optional)
-
-Run this if you want to retrain the model manually:
+## 🏋️‍♂️ Model Training
 
 ```bash
 python src/customer_segmentation.py
 ```
 
-✅ Outputs:
+Outputs:
 
-* `models/kmeans_model.pkl`
-* `models/scaler.pkl`
-* `elbow_plot.png`
-* `cluster_plot.png`
+* models/kmeans\_model.pkl
+* models/scaler.pkl
+* elbow\_plot.png
+* cluster\_plot.png
 * Silhouette Score in terminal
 
----
-
-## 🌐 Streamlit App (Main Feature)
-
-Launch the web app:
+## 🌐 Streamlit App
 
 ```bash
 streamlit run app.py
 ```
 
-Then open: [http://localhost:8501](http://localhost:8501)
+Go to: [http://localhost:8501](http://localhost:8501)
 
-### 🔧 App Features
+### Features
 
-* 📂 Upload CSV with `Annual Income` and `Spending Score`
-* 📄 View raw data and clustered data
-* 🎯 Visualize customer segments (scatter plot)
-* 📈 View dataset summary
-* 📷 See pairplot of selected features
-* ⬇️ Download CSV with assigned clusters
-
----
+* Upload CSV with `Annual Income` and `Spending Score`
+* View raw data and clustered data
+* Cluster visualization (scatter plot)
+* Dataset summary
+* Pairplot by cluster
+* Download clustered CSV
 
 ## 📷 Screenshots
 
-### 🎯 Cluster Visualization
+### Cluster Visualization
 
 ![cluster\_plot](cluster_plot.png)
 
-### 📈 Elbow Method
+### Elbow Method
 
 ![elbow\_plot](elbow_plot.png)
 
-> You can also take screenshots from the live Streamlit app UI and include them here.
-
----
-
-## 🔐 `.gitignore` (Recommended)
-
-To prevent `venv/`, cache files, and large data from being pushed:
+## 🔐 .gitignore
 
 ```
 venv/
@@ -158,49 +123,25 @@ __pycache__/
 *.csv
 ```
 
----
-
 ## 🚀 Deployment (Optional)
 
-You can deploy this app to **Streamlit Cloud**:
-
-1. Go to [https://streamlit.io/cloud](https://streamlit.io/cloud)
-2. Click "New app"
-3. Select your GitHub repo: `customer-segmentation-ml`
-4. Set main file as: `app.py`
-5. Click **Deploy**
-
-Done! Your app is now publicly available.
-
----
+* Go to [https://streamlit.io/cloud](https://streamlit.io/cloud)
+* Click "New app"
+* Choose this repo
+* Set app file: `app.py`
+* Click Deploy
 
 ## 📦 Future Improvements
 
-* Allow user to select number of clusters (K)
-* Apply PCA for 3D visualization
-* Add gender/age for multi-feature clustering
-* Build dashboard using Plotly or Dash
-* Deploy as Flask/FastAPI API for integration
-
----
+* User-selectable K value
+* PCA for 3D visualization
+* Age/Gender based clustering
+* Deploy as an API
+* Dashboard with Plotly
 
 ## 👨‍💻 Author
 
-Created by \[Your Name or GitHub Username]
-Special thanks to the `Mall_Customers.csv` dataset from Kaggle.
-
----
+Created by YOUR\_NAME
 
 ```
-
----
-
-## ✅ Next Steps
-
-Let me know if you'd like to:
-- Add **PCA** and update visualizations
-- Allow **interactive K value selection**
-- Create a version with **Streamlit Cloud deployment instructions**
-
-You're now ready to share this project anywhere — including GitHub, LinkedIn, portfolio, or a demo! 🚀
 ```
