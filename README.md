@@ -1,7 +1,23 @@
+Thanks for the screenshot! You're right — the **README formatting is breaking**, especially in the folder structure and table areas.
+
+Let me give you a **clean, copy-paste `README.md`** that:
+
+* Displays perfectly in GitHub
+* Uses proper code blocks and spacing
+* Looks good in both light and dark mode
+
+---
+
+### ✅ FINAL CLEAN `README.md` (well-formatted for GitHub)
+
+Copy and paste **exactly this**:
+
 ```markdown
 # 🛍️ Customer Segmentation using K-Means Clustering
 
 This project segments mall customers into distinct groups based on **Annual Income** and **Spending Score**, using unsupervised machine learning (K-Means). It includes an interactive **Streamlit web app** for live predictions, visualizations, and downloads.
+
+---
 
 ## 📌 Project Goals
 
@@ -9,6 +25,8 @@ This project segments mall customers into distinct groups based on **Annual Inco
 - Visualize cluster formation using Elbow and Scatter plots
 - Evaluate cluster quality using Silhouette Score
 - Build an interactive web app to upload, cluster, and download customer data
+
+---
 
 ## 🧠 Tech Stack
 
@@ -19,6 +37,8 @@ This project segments mall customers into distinct groups based on **Annual Inco
 | Plotting     | matplotlib, seaborn             |
 | App Framework| Streamlit                       |
 | Deployment   | GitHub + (optional Streamlit Cloud) |
+
+---
 
 ## 📁 Project Structure
 
@@ -42,49 +62,59 @@ customer-segmentation-ml/
 
 ````
 
+---
+
 ## 📊 Dataset
 
-**Source:** https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python  
+**Source:** [Mall Customers Dataset - Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
+
 **Columns Used:**
-- Annual Income (k$)
-- Spending Score (1-100)
+- `Annual Income (k$)`
+- `Spending Score (1-100)`
+
+---
 
 ## 🚀 Setup & Run Locally
 
-### 1️⃣ Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/customer-segmentation-ml.git
 cd customer-segmentation-ml
 ````
 
-### 2️⃣ Create & Activate Virtual Environment
+### 2. Create & Activate Virtual Environment
 
 ```bash
 python -m venv venv
-venv\Scripts\activate     # On Windows
-source venv/bin/activate  # On macOS/Linux
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
 ```
 
-### 3️⃣ Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 🏋️‍♂️ Model Training
+---
+
+## 🏋️‍♂️ Model Training (Optional)
 
 ```bash
 python src/customer_segmentation.py
 ```
 
-Outputs:
+**Outputs:**
 
-* models/kmeans\_model.pkl
-* models/scaler.pkl
-* elbow\_plot.png
-* cluster\_plot.png
-* Silhouette Score in terminal
+* `models/kmeans_model.pkl`
+* `models/scaler.pkl`
+* `elbow_plot.png`
+* `cluster_plot.png`
+
+---
 
 ## 🌐 Streamlit App
 
@@ -92,26 +122,32 @@ Outputs:
 streamlit run app.py
 ```
 
-Go to: [http://localhost:8501](http://localhost:8501)
+Open in browser: `http://localhost:8501`
 
-### Features
+---
+
+## ⚙️ App Features
 
 * Upload CSV with `Annual Income` and `Spending Score`
-* View raw data and clustered data
-* Cluster visualization (scatter plot)
-* Dataset summary
-* Pairplot by cluster
-* Download clustered CSV
+* Preview raw data and clustered results
+* Visualize clusters using scatter plot
+* View dataset summary statistics
+* Pairplot of features grouped by cluster
+* Download clustered CSV file
+
+---
 
 ## 📷 Screenshots
 
 ### Cluster Visualization
 
-![cluster\_plot](cluster_plot.png)
+![Cluster Plot](cluster_plot.png)
 
 ### Elbow Method
 
-![elbow\_plot](elbow_plot.png)
+![Elbow Plot](elbow_plot.png)
+
+---
 
 ## 🔐 .gitignore
 
@@ -123,26 +159,40 @@ __pycache__/
 *.csv
 ```
 
-## 🚀 Deployment (Optional)
+---
 
-* Go to [https://streamlit.io/cloud](https://streamlit.io/cloud)
-* Click "New app"
-* Choose this repo
-* Set app file: `app.py`
-* Click Deploy
+## 🚀 Deploy to Streamlit Cloud (Optional)
 
-## 📦 Future Improvements
+1. Visit: [https://streamlit.io/cloud](https://streamlit.io/cloud)
+2. Click "New app"
+3. Choose your repo and set the file to `app.py`
+4. Click **Deploy**
 
-* User-selectable K value
-* PCA for 3D visualization
-* Age/Gender based clustering
-* Deploy as an API
-* Dashboard with Plotly
+---
+
+## 🔮 Future Enhancements
+
+* Let user select number of clusters (K)
+* Use PCA for 2D/3D projection
+* Add additional features (e.g., Age, Gender)
+* REST API with FastAPI or Flask
+* Streamlit dashboard with filters
+
+---
 
 ## 👨‍💻 Author
 
-Created by YOUR\_NAME
+Created by \[aniborra5757]
 
 ```
-aniborra5757
+
+---
+
+✅ This version uses:
+- Triple backticks for code blocks
+- Proper table and folder tree spacing
+- Clean headings and emoji alignment
+- Works **perfectly on GitHub preview**
+
+Let me know once you've updated it, or if you'd like a `LICENSE`, deployment badge, or LinkedIn-ready description.
 ```
